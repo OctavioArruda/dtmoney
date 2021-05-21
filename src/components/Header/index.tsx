@@ -1,15 +1,22 @@
 import logoImg from '../../assets/logo.svg'
+import {
+  Content,
+  Button,
+  Container,
+} from './styles'
 
 export function Header(): JSX.Element {
   return (
-    <header>
-      <img
-        src={logoImg}
-        alt="dt money"
-      />
-      <button type="button">
-        Nova transação
-      </button>
-    </header>
+    <Container>
+      <Content>
+        <img
+          src={logoImg}
+          alt="dt money"
+        />
+        <Button type="button">
+          Nova transação
+        </Button>
+      </Content>
+    </Container>
   )
 }
