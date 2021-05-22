@@ -5,7 +5,13 @@ import {
   Container,
 } from './styles'
 
-export function Header(): JSX.Element {
+interface HeaderProps {
+  onOpenNewTransactionModal: () => void
+}
+
+export function Header({
+  onOpenNewTransactionModal,
+}: HeaderProps): JSX.Element {
   return (
     <Container>
       <Content>
@@ -13,7 +19,12 @@ export function Header(): JSX.Element {
           src={logoImg}
           alt="dt money"
         />
-        <Button type="button">
+        <Button
+          type="button"
+          onClick={
+            onOpenNewTransactionModal
+          }
+        >
           Nova transação
         </Button>
       </Content>
