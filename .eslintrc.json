@@ -28,6 +28,10 @@
     "prettier"
   ],
   "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": true }
+    ],
     "prettier/prettier": 0,
     "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
