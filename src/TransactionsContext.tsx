@@ -33,7 +33,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps): J
   })
 
   function createTransaction(transaction: TransactionInput): void {
-    api.post('/transactions', transaction)
+    api.post('/transactions', { ...transaction, createdAt: new Date() })
   }
 
   return (
