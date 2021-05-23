@@ -17,7 +17,7 @@ createServer({
           type: 'deposit',
           category: 'Development',
           amount: 6000,
-          createdAt: new Date('2021-02-12 09:00:23'),
+          createdAt: new Date('2021-02-06 09:00:23'),
         },
         {
           id: 2,
@@ -25,7 +25,7 @@ createServer({
           type: 'withdraw',
           category: 'Expenses',
           amount: 1000,
-          createdAt: new Date('2021-03-10 09:23:12'),
+          createdAt: new Date('2021-03-03 09:23:12'),
         },
         {
           id: 3,
@@ -34,6 +34,22 @@ createServer({
           category: 'Maintenance',
           amount: 100,
           createdAt: new Date('2021-03-10 10:54:19'),
+        },
+        {
+          id: 4,
+          title: 'Revisão moto',
+          type: 'withdraw',
+          category: 'Maintenance',
+          amount: 2050,
+          createdAt: new Date('2021-10-10 12:54:19'),
+        },
+        {
+          id: 5,
+          title: 'Rancho',
+          type: 'withdraw',
+          category: 'Food',
+          amount: 600,
+          createdAt: new Date('2021-05-02 09:23:12'),
         },
       ],
     })
